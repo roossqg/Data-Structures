@@ -12,15 +12,14 @@ def sum_arr(arr):
 #--> basically each func will put on a stack and execute partially yet the base case,where returns and remove funcs from stacks
 
 def search_list(arr):
-
-    #base count: []=0 elements:stop
-    if len(arr)>0:
+    #base count: []=1 elements:stop+1)last
+    if len(arr)>1:
         return 1+search_list(arr=arr[0+1:]) #change last array in each func on stack
 
 
 
 exp1=[2,5,6,2,5.3]
-t=sum_arr(exp1)
+t=search_list(exp1)
 print(t)
 
 def search(box):

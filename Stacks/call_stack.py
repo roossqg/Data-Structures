@@ -1,16 +1,13 @@
-def box_call(first_box)
+def box_call(first_box):
+    print("FIRST BOX")
+    print(f"1: {first_box}")
 
 
 
-
-
-
-
-#def first(name):
+def first(name):
     print(f"hello {name}") #stack -> f|
 
-    second(name) # stack --> s|f (second about fist):
+    box_call(name) # stack --> s|f (second about fist):
 
     print(f"bye {name}") # stack --> f|
 
-    bye(name)    #stack thi|f
