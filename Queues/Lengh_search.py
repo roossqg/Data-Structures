@@ -1,6 +1,6 @@
 from collections import deque
 
-class queue_digraph():
+class graphs():
     def __init__(self,hash_names,arr=[]):
         self.arr=[]#--> our stack
         self.hash_names=hash_names
