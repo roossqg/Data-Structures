@@ -21,15 +21,16 @@ class Graph_Tree():
 
         elif base_floor == 'exit' :
             #graph link below
+            self.hash_names[f'{graph}']=[]
+            
             while True :
                 b=input('There any graph after this graph? (node/not): ')
-
-                if b != 'not':
-                    self.hash_names[f'{graph}']=[]
+                
+                if b == 'not':
                     break
 
                 else:
-                    self.hash_names[f'{graph}'] += [b]
+                    self.hash_names[f'{graph}'].append(b)
 
         return self.hash_names
 
@@ -64,6 +65,7 @@ class Graph_Tree():
 hash_houses={'house1':['bedroom1'],'house2':['bathroom2','room2']}
 
 test1=Graph_Tree(hash_houses)
+print(test1.put_graph('bedroom2'))
 
 
 
