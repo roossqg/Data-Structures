@@ -75,3 +75,6 @@ print(test1.put_graph('bedroom2'))
             
 
         
+    fi = fi:960,mat:540 (alg,est,geo)
+    mat = fis:  
+
