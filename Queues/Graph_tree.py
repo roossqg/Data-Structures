@@ -66,15 +66,3 @@ hash_houses={'house1':['bedroom1'],'house2':['bathroom2','room2']}
 
 test1=Graph_Tree(hash_houses)
 print(test1.put_graph('bedroom2'))
-
-
-
-
-
-
-            
-
-        
-    fi = fi:960,mat:540 (alg,est,geo)
-    mat = fis:  
-
