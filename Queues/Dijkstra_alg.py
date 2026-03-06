@@ -23,6 +23,30 @@ class Dijkstra():
         distances[start] = 0
         graphs_visited = [False] * self.size
 
+        for vector in range(self.size):
+            vector = None
+            minimum_distance = float('inf')
+
+            for sub_vector in range(self.size):
+                if distances[sub_vector] < minimum_distance and not graphs_visited[sub_vector]:
+                    minimum_distance = distances[sub_vector]
+                    vector = sub_vector
+
+                if vector is None:
+                    break
+
+                graphs_visited[sub_vector] = True
+
+
+            for vector_edge in range(self.size):
+                if self.graph_matrix[vector][vector_edge] != 0 and not graphs_visited[vector_edge]:
+                    new_cost = distances[vector] + self.graph_matrix[vector][vector_edge]
+                    if new_cost < distances[vector_edge]:
+                        distances[vector_edge] = new_cost
+
+                        
+        return distances
+
 
 
 
