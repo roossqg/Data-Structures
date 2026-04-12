@@ -32,10 +32,10 @@ class Dijkstra():
                     minimum_distance = distances[sub_vector]
                     vector = sub_vector
 
-                if vector is None:
-                    break
+            if vector is None:
+                break
 
-                graphs_visited[sub_vector] = True
+            graphs_visited[sub_vector] = True
 
 
             for vector_edge in range(self.size):
@@ -44,7 +44,7 @@ class Dijkstra():
                     if new_cost < distances[vector_edge]:
                         distances[vector_edge] = new_cost
 
-                        
+
         return distances
 
 

@@ -43,7 +43,7 @@ class Node():
         current_node.next = current_node.next.next # we simply skip this node,so the points between it are changed
 
     def add_node(head,newNode,position):
-        """In the same way than delete,we need change the points of nodes between the position to connect with a new space."""
+        """In the same way than delete,we need to change the points of nodes between the position to connect with a new space."""
 
         if position == 1:
             newNode.next = head
